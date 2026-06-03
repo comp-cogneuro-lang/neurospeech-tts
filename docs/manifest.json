@@ -1,0 +1,74 @@
+{
+  "title": "neurospeech — TTS samples",
+  "subtitle": "Flow-matching (F5-TTS) multi-speaker synthesis. Each voice is a cached reference clip; cloning is the same call with your own clip.",
+  "speakers": [
+    { "id": "spk0", "preset": 0, "name": "Voice 1", "tag": "spk272" },
+    { "id": "spk1", "preset": 1, "name": "Voice 2", "tag": "spk234" },
+    { "id": "spk2", "preset": 2, "name": "Voice 3", "tag": "spk263" },
+    { "id": "spk3", "preset": 3, "name": "Voice 4", "tag": "spk206" },
+    { "id": "spk4", "preset": 4, "name": "Voice 5", "tag": "spk225" },
+    { "id": "spk5", "preset": 5, "name": "Voice 6", "tag": "spk252" }
+  ],
+  "languages": [
+    {
+      "code": "eu",
+      "name": "Basque",
+      "native": "Euskara",
+      "flag": "🏴",
+      "available": true,
+      "sentences": [
+        "Kaixo, gaur egun zoragarria izan dezazula.",
+        "Euskal Herria mendiz eta itsasoz inguratuta dago.",
+        "Bihar goizean elkartuko gara kafe bat hartzeko.",
+        "Liburu hau oso interesgarria iruditu zait.",
+        "Eskerrik asko zure laguntza guztiagatik."
+      ],
+      "words": [
+        "kaixo", "agur", "bai", "ez", "mesedez",
+        "gabon", "etxea", "ura", "ogia", "ardoa",
+        "mendia", "itsasoa", "eguzkia", "euria", "elurra",
+        "liburua", "mahaia", "txakurra", "katua", "laguna"
+      ]
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "native": "English",
+      "flag": "🇬🇧",
+      "available": false,
+      "sentences": [
+        "Hello, I hope you have a wonderful day today.",
+        "The Basque Country is surrounded by mountains and the sea.",
+        "We will meet tomorrow morning to have a coffee.",
+        "I found this book very interesting.",
+        "Thank you so much for all your help."
+      ],
+      "words": [
+        "hello", "goodbye", "yes", "no", "please",
+        "morning", "house", "water", "bread", "wine",
+        "mountain", "ocean", "sun", "rain", "snow",
+        "book", "table", "dog", "cat", "friend"
+      ]
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "native": "Español",
+      "flag": "🇪🇸",
+      "available": false,
+      "sentences": [
+        "Hola, espero que tengas un día maravilloso hoy.",
+        "El País Vasco está rodeado de montañas y mar.",
+        "Nos veremos mañana por la mañana para tomar un café.",
+        "Este libro me ha parecido muy interesante.",
+        "Muchas gracias por toda tu ayuda."
+      ],
+      "words": [
+        "hola", "adiós", "sí", "no", "porfavor",
+        "mañana", "casa", "agua", "pan", "vino",
+        "montaña", "océano", "sol", "lluvia", "nieve",
+        "libro", "mesa", "perro", "gato", "amigo"
+      ]
+    }
+  ]
+}
