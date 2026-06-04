@@ -55,7 +55,7 @@
       "name": "Spanish",
       "native": "Español",
       "flag": "🇪🇸",
-      "available": false,
+      "available": true,
       "sentences": [
         "Hola, espero que tengas un día maravilloso hoy.",
         "El País Vasco está rodeado de montañas y mar.",
@@ -64,7 +64,7 @@
         "Muchas gracias por toda tu ayuda."
       ],
       "words": [
-        "hola", "adiós", "sí", "no", "porfavor",
+        "hola", "adiós", "sí", "no", "por favor",
         "mañana", "casa", "agua", "pan", "vino",
         "montaña", "océano", "sol", "lluvia", "nieve",
         "libro", "mesa", "perro", "gato", "amigo"

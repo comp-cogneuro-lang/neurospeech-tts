@@ -27,17 +27,29 @@ Repo **Settings → Pages → Source: "Deploy from a branch" → branch `main`, 
 Only `docs/samples/**` WAVs are committed (the heavy training dumps are
 `.gitignore`d), so the upload stays small.
 
-## Regenerate / add the EU audio
+## Regenerate the audio
 
 ```bash
 source .venv-f5/bin/activate
-python scripts/build_site_samples.py --lang eu   # resumable; skips existing
+
+# Basque — our fine-tuned F5 (newest checkpoint, char vocab), 24 kHz
+python scripts/build_site_samples.py --lang eu
+
+# Spanish — jpgallegoar/F5-Spanish (original F5TTS_Base arch, CC-BY-NC-4.0),
+# cross-lingual cloning of the same 6 Basque preset clips -> same voices, ES
+python scripts/build_site_samples.py --lang es \
+  --ckpt   models/f5_spanish/model_1200000.safetensors \
+  --vocab  models/f5_spanish/vocab.txt \
+  --model-arch F5TTS_Base
 ```
 
-## Add English / Spanish
+Both are resumable (existing clips are skipped). The Spanish checkpoint is
+fetched from `huggingface.co/jpgallegoar/F5-Spanish` into `models/f5_spanish/`.
 
-The sentence + word text is already in `manifest.json` (placeholders). Two ways
-to fill in the audio:
+## Add English
+
+The English sentence + word text is already in `manifest.json` (placeholders,
+`"available": false`). Two ways to fill in the audio:
 
 1. **Drop in your own WAVs** using the exact paths the page expects:
    - sentences: `samples/<lang>/sentences/s<i>_<spk>.wav` (`<i>` = 0-based index
