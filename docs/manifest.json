@@ -35,7 +35,7 @@
       "name": "English",
       "native": "English",
       "flag": "🇬🇧",
-      "available": false,
+      "available": true,
       "sentences": [
         "Hello, I hope you have a wonderful day today.",
         "The Basque Country is surrounded by mountains and the sea.",

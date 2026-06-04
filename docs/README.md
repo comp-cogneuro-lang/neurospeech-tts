@@ -41,15 +41,23 @@ python scripts/build_site_samples.py --lang es \
   --ckpt   models/f5_spanish/model_1200000.safetensors \
   --vocab  models/f5_spanish/vocab.txt \
   --model-arch F5TTS_Base
+
+# English — stock F5TTS_v1_Base (English-native), same 6 preset clips
+BASE=$(echo ~/.cache/huggingface/hub/models--SWivid--F5-TTS/snapshots/*/F5TTS_v1_Base)
+python scripts/build_site_samples.py --lang en \
+  --ckpt "$BASE/model_1250000.safetensors" \
+  --vocab "$BASE/vocab.txt" \
+  --model-arch F5TTS_v1_Base
 ```
 
-Both are resumable (existing clips are skipped). The Spanish checkpoint is
-fetched from `huggingface.co/jpgallegoar/F5-Spanish` into `models/f5_spanish/`.
+All resumable (existing clips are skipped). The Spanish checkpoint is fetched
+from `huggingface.co/jpgallegoar/F5-Spanish` into `models/f5_spanish/`; the
+English base is the stock F5-TTS model (auto-downloaded to the HF cache).
 
-## Add English
+## Adding another language
 
-The English sentence + word text is already in `manifest.json` (placeholders,
-`"available": false`). Two ways to fill in the audio:
+Add a block to `manifest.json` (`sentences`, `words`, `speakers` are shared),
+then point `build_site_samples.py --lang <code>` at a model that speaks it.
 
 1. **Drop in your own WAVs** using the exact paths the page expects:
    - sentences: `samples/<lang>/sentences/s<i>_<spk>.wav` (`<i>` = 0-based index
