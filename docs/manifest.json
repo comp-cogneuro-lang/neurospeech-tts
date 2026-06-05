@@ -2,12 +2,48 @@
   "title": "neurospeech — TTS samples",
   "subtitle": "Flow-matching (F5-TTS) multi-speaker synthesis. Each voice is a cached reference clip; cloning is the same call with your own clip.",
   "speakers": [
-    { "id": "spk0", "preset": 0, "name": "Voice 1", "tag": "spk272" },
-    { "id": "spk1", "preset": 1, "name": "Voice 2", "tag": "spk234" },
-    { "id": "spk2", "preset": 2, "name": "Voice 3", "tag": "spk263" },
-    { "id": "spk3", "preset": 3, "name": "Voice 4", "tag": "spk206" },
-    { "id": "spk4", "preset": 4, "name": "Voice 5", "tag": "spk225" },
-    { "id": "spk5", "preset": 5, "name": "Voice 6", "tag": "spk252" }
+    {
+      "id": "spk0",
+      "preset": 0,
+      "name": "Voice 1",
+      "tag": "spk234 (F)"
+    },
+    {
+      "id": "spk1",
+      "preset": 1,
+      "name": "Voice 2",
+      "tag": "spk263 (F)"
+    },
+    {
+      "id": "spk2",
+      "preset": 2,
+      "name": "Voice 3",
+      "tag": "spk206 (M)"
+    },
+    {
+      "id": "spk3",
+      "preset": 3,
+      "name": "Voice 4",
+      "tag": "spk252 (M)"
+    },
+    {
+      "id": "spk4",
+      "preset": 4,
+      "name": "Voice 5",
+      "tag": "spk1 (F)"
+    },
+    {
+      "id": "spk5",
+      "preset": 5,
+      "name": "Voice 6",
+      "tag": "spk3 (M)"
+    },
+    {
+      "id": "spk6",
+      "preset": 6,
+      "name": "Voice 7",
+      "tag": "spk5 (M)"
+    }
   ],
   "languages": [
     {
@@ -24,10 +60,26 @@
         "Eskerrik asko zure laguntza guztiagatik."
       ],
       "words": [
-        "kaixo", "agur", "bai", "ez", "mesedez",
-        "gabon", "etxea", "ura", "ogia", "ardoa",
-        "mendia", "itsasoa", "eguzkia", "euria", "elurra",
-        "liburua", "mahaia", "txakurra", "katua", "laguna"
+        "kaixo",
+        "agur",
+        "bai",
+        "ez",
+        "mesedez",
+        "gabon",
+        "etxea",
+        "ura",
+        "ogia",
+        "ardoa",
+        "mendia",
+        "itsasoa",
+        "eguzkia",
+        "euria",
+        "elurra",
+        "liburua",
+        "mahaia",
+        "txakurra",
+        "katua",
+        "laguna"
       ]
     },
     {
@@ -44,10 +96,26 @@
         "Thank you so much for all your help."
       ],
       "words": [
-        "hello", "goodbye", "yes", "no", "please",
-        "morning", "house", "water", "bread", "wine",
-        "mountain", "ocean", "sun", "rain", "snow",
-        "book", "table", "dog", "cat", "friend"
+        "hello",
+        "goodbye",
+        "yes",
+        "no",
+        "please",
+        "morning",
+        "house",
+        "water",
+        "bread",
+        "wine",
+        "mountain",
+        "ocean",
+        "sun",
+        "rain",
+        "snow",
+        "book",
+        "table",
+        "dog",
+        "cat",
+        "friend"
       ]
     },
     {
@@ -64,10 +132,26 @@
         "Muchas gracias por toda tu ayuda."
       ],
       "words": [
-        "hola", "adiós", "sí", "no", "por favor",
-        "mañana", "casa", "agua", "pan", "vino",
-        "montaña", "océano", "sol", "lluvia", "nieve",
-        "libro", "mesa", "perro", "gato", "amigo"
+        "hola",
+        "adiós",
+        "sí",
+        "no",
+        "por favor",
+        "mañana",
+        "casa",
+        "agua",
+        "pan",
+        "vino",
+        "montaña",
+        "océano",
+        "sol",
+        "lluvia",
+        "nieve",
+        "libro",
+        "mesa",
+        "perro",
+        "gato",
+        "amigo"
       ]
     }
   ]
